@@ -16,7 +16,7 @@ def discover():
         key_properties = table_metadata.get('table-key-properties')
         
         
-        if stream_name in ['ad_accounts', 'campaigns', 'campaign_stats_daily', 'ads', 'ad_stats_daily']:
+        if stream_name in ['ad_accounts', 'campaigns', 'campaign_stats_daily']:#, 'ads', 'ad_stats_daily']:
             mdata[0]["metadata"]["selected"] = True
 
         catalog.streams.append(CatalogEntry(
